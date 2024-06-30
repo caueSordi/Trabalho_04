@@ -61,7 +61,7 @@ def mochila_gulosa(objetos, capacidade_max):
     valor_total_gulosa = 0
     
     objetos_ordenados = sorted(objetos, key=lambda x: (x.razao, -x.peso), reverse=True)
-    
+    #s
     for objeto in objetos_ordenados:
         if peso_atual + objeto.peso <= capacidade_max:
             solucao_gulosa.append(objeto)
